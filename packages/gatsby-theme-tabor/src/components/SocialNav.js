@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, Linkedin } from './Icons';
+import { Github, Linkedin, Twitter } from './Icons';
 //TODO: make it dynamic
 
 const SocialNav = () => (
@@ -22,15 +22,15 @@ const SocialNav = () => (
             <Twitter />
           </a>
         </li>
-        {/* <li
+        <li
           id="menu-item-352"
           className="menu-item menu-item-type-custom menu-item-object-custom menu-item-352"
         >
-          <a href="http://dribbble.com/richtabor">
-            <span className="screen-reader-text">Dribbble</span>
+          <a href="https://github.com/n8finch">
+            <span className="screen-reader-text">Github</span>
             <Github />
           </a>
-        </li> */}
+        </li>
         <li
           id="menu-item-353"
           className="menu-item menu-item-type-custom menu-item-object-custom menu-item-353"

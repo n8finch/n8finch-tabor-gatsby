@@ -1,5 +1,6 @@
 export { IconLeft } from "./IconLeft"
 export { IconRight } from "./IconRight"
-export { Twitter } from "./Twitter"
 export { FacebookShare } from "./FacebookShare"
+export { Github } from "./Github"
 export { Linkedin } from "./Linkedin"
+export { Twitter } from "./Twitter"
