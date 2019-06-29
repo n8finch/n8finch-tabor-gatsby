@@ -1,18 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
 const WithLink = ({ post, location, children }) =>
-  location === "single" ? (
+  location === 'single' ? (
     children
   ) : (
-    <Link
-      className="post-thumbnail"
-      to={`/blog/${post.uri}`}
-      aria-hidden="true"
-    >
+    <Link className="post-thumbnail" to={`/${post.uri}`} aria-hidden="true">
       {children}
     </Link>
-  )
+  );
 
 const PostEntryMedia = ({ post, location }) => (
   <div className="entry-media bottom-spacer center-align">
@@ -32,6 +28,6 @@ const PostEntryMedia = ({ post, location }) => (
       </div>
     </WithLink>
   </div>
-)
+);
 
-export default PostEntryMedia
+export default PostEntryMedia;
