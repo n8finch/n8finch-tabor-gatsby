@@ -1,5 +1,5 @@
-import React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
+import React from 'react';
+import { Link, graphql, StaticQuery } from 'gatsby';
 
 const POSTS_QUERY = graphql`
   query GET_POSTS {
@@ -9,26 +9,23 @@ const POSTS_QUERY = graphql`
           title
           id
           uri
-          featuredImage {
-            sourceUrl
-          }
         }
       }
     }
   }
-`
+`;
 
 const findNextPost = (post, data) => {
-  const posts = data.wpgraphql.posts.nodes
-  const currentPostIndex = posts.findIndex(item => item.id === post.id)
-  return posts[currentPostIndex + 1]
-}
+  const posts = data.wpgraphql.posts.nodes;
+  const currentPostIndex = posts.findIndex(item => item.id === post.id);
+  return posts[currentPostIndex + 1];
+};
 
 const NextPost = ({ post }) => (
   <StaticQuery
     query={POSTS_QUERY}
     render={data => {
-      const nextPost = findNextPost(post, data)
+      const nextPost = findNextPost(post, data);
 
       return (
         <div className="flex items-center justify-end relative">
@@ -48,7 +45,10 @@ const NextPost = ({ post }) => (
                 <span className="up-next h6 header-font medium smooth gray">
                   Up Next
                 </span>
-                <h4 className="title h5 medium-bold">{nextPost.title}</h4>
+                <h4
+                  className="title h5 medium-bold"
+                  dangerouslySetInnerHTML={{ __html: nextPost.title }}
+                />
                 <Link
                   to={`/${nextPost.uri}`}
                   rel="bookmark"
@@ -60,9 +60,9 @@ const NextPost = ({ post }) => (
             )}
           </div>
         </div>
-      )
+      );
     }}
   />
-)
+);
 
-export default NextPost
+export default NextPost;

@@ -13,7 +13,11 @@ const SocialNav = () => (
           id="menu-item-351"
           className="menu-item menu-item-type-custom menu-item-object-custom menu-item-351"
         >
-          <a href="http://twitter.com/n8finch" target="_blank">
+          <a
+            href="http://twitter.com/n8finch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="screen-reader-text">Twitter</span>
             <Twitter />
           </a>
@@ -31,7 +35,11 @@ const SocialNav = () => (
           id="menu-item-353"
           className="menu-item menu-item-type-custom menu-item-object-custom menu-item-353"
         >
-          <a href="https://www.linkedin.com/in/natefinch/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/natefinch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="screen-reader-text">Medium</span>
             <Linkedin />
           </a>
