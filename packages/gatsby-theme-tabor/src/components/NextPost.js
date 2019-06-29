@@ -50,7 +50,7 @@ const NextPost = ({ post }) => (
                 </span>
                 <h4 className="title h5 medium-bold">{nextPost.title}</h4>
                 <Link
-                  to={`/blog/${nextPost.uri}`}
+                  to={`/${nextPost.uri}`}
                   rel="bookmark"
                   title={nextPost.title}
                 >
