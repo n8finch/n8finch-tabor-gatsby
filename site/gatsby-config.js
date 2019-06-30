@@ -3,6 +3,7 @@ module.exports = {
     title: `All the Things`,
     description: `Keeping it clever...`,
     author: `@n8finch`,
+    image: "./static/images/icon.png",
     wordPressUrl: `http://dev-n8finch.pantheonsite.io`,
   },
   __experimentalThemes: [
