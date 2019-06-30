@@ -32,7 +32,7 @@ const MENU_QUERY = graphql`
 
 const renderLink = menuItem =>
   menuItem.connectedObject.__typename === 'WPGraphQL_MenuItem' ? (
-    <a href={menuItem.url} target="_blank" rel="noopener noreferrer">
+    <a href={menuItem.url} rel="noopener noreferrer">
       {menuItem.label}
     </a>
   ) : createLocalLink(menuItem.url) ? (
