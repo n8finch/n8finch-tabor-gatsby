@@ -51,7 +51,7 @@ module.exports = async ({ actions, graphql }) => {
     allTags.map(tag => {
       console.log(`create tag: ${tag.slug}`)
       createPage({
-        path: `/blog/tag/${tag.slug}`,
+        path: `/tag/${tag.slug}`,
         component: tagTemplate,
         context: tag,
       })

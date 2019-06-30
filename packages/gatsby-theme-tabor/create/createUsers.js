@@ -51,7 +51,7 @@ module.exports = async ({ actions, graphql }) => {
     allUsers.map(user => {
       console.log(`create user: ${user.slug}`)
       createPage({
-        path: `/blog/author/${user.slug}`,
+        path: `/author/${user.slug}`,
         component: userTemplate,
         context: user,
       })

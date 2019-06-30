@@ -53,7 +53,7 @@ module.exports = async ({ actions, graphql }) => {
     allCategories.map(category => {
       console.log(`create category: ${category.slug}`)
       createPage({
-        path: `/blog/category/${category.slug}`,
+        path: `/category/${category.slug}`,
         component: categoryTemplate,
         context: {
           ...category,
