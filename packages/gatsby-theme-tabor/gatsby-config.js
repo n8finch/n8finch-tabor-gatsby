@@ -33,5 +33,11 @@ module.exports = ({ wordPressUrl }) => ({
         pathToConfigModule: require.resolve(`./src/utils/typography`),
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-72004715-1",
+      },
+    },
   ],
 })
