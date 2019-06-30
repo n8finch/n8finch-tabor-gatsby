@@ -5,7 +5,17 @@
 	position: relative;
 
 	@media only screen and (min-width: 700px) {
-		padding: 9em 0;
+		padding: 1em 0;
+	}
+
+	p.subscribe-note a {
+		font-weight: 700;
+		transition: 0.25s all ease;
+
+		&:hover {
+			border-bottom: 2px solid #444;
+			color: #444;
+		}
 	}
 
 	.widget {
