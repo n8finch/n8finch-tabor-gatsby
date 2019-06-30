@@ -3,12 +3,12 @@ module.exports = {
     title: `All the Things`,
     description: `Keeping it clever...`,
     author: `@n8finch`,
-    wordPressUrl: `https://n8finch.com`,
+    wordPressUrl: `http://dev-n8finch.pantheonsite.io`,
   },
   __experimentalThemes: [
     {
       resolve: 'gatsby-theme-tabor',
-      options: { wordPressUrl: `https://n8finch.com` },
+      options: { wordPressUrl: `http://dev-n8finch.pantheonsite.io` },
     },
   ],
 };
