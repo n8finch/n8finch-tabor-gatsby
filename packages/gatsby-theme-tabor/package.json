@@ -17,6 +17,8 @@
   "dependencies": {
     "autoprefixer": "^9.4.10",
     "axios": "^0.18.0",
+    "gatsby-plugin-manifest": "^2.2.0",
+    "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-page-creator": "^2.0.9",
     "gatsby-plugin-postcss": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.8",
